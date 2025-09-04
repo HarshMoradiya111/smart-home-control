@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     }),
     react(),
   ],
-  base: mode === 'production' ? '/smart-home-dashboard/' : '/',
+  base: mode === 'production' ? '/smart-home-control/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

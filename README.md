@@ -1,6 +1,6 @@
-# 🏠 Smart Home Dashboard
+# 🏠 Smart Home Control
 
-A modern, responsive smart home dashboard built with React, TypeScript, and shadcn/ui. Monitor and control your smart devices with an intuitive interface.
+A modern, responsive smart home control dashboard built with React, TypeScript, and shadcn/ui. Monitor and control your smart devices with an intuitive interface.
 
 ![Smart Home Dashboard](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -35,8 +35,8 @@ A modern, responsive smart home dashboard built with React, TypeScript, and shad
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/smart-home-dashboard.git
-   cd smart-home-dashboard
+   git clone https://github.com/yourusername/smart-home-control.git
+   cd smart-home-control
    ```
 
 2. **Install dependencies**
@@ -59,7 +59,7 @@ A modern, responsive smart home dashboard built with React, TypeScript, and shad
 ## 📁 Project Structure
 
 ```
-smart-home-dashboard/
+smart-home-control/
 ├── src/
 │   ├── components/          # Reusable UI components
 │   │   ├── QuickStats.tsx   # Device statistics overview
@@ -154,6 +154,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Live Demo**: [View Demo](https://yourusername.github.io/smart-home-dashboard)
+**Live Demo**: [View Demo](https://yourusername.github.io/smart-home-control)
 
 Made with ❤️ by [Your Name](https://github.com/yourusername)
