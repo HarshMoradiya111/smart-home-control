@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏠 Smart Home Control
 
 A modern, responsive smart home control dashboard built with React, TypeScript, and shadcn/ui. Monitor and control your smart devices with an intuitive interface.
@@ -157,3 +158,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Live Demo**: [View Demo](https://yourusername.github.io/smart-home-control)
 
 Made with ❤️ by [Your Name](https://github.com/yourusername)
+=======
+# smart-home-control
+>>>>>>> f9f9bbca69a03ca823eca82b547c3e2954a595c5
