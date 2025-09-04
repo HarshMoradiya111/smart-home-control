@@ -1,68 +1,159 @@
-# Shadcn-UI Template Usage Instructions
+# 🏠 Smart Home Dashboard
 
-## technology stack
+A modern, responsive smart home dashboard built with React, TypeScript, and shadcn/ui. Monitor and control your smart devices with an intuitive interface.
 
-This project is built with:
+![Smart Home Dashboard](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## ✨ Features
 
-All shadcn/ui components have been downloaded under `@/components/ui`.
+- **Real-time Device Monitoring**: Track status of all connected smart devices
+- **Room-based Organization**: Organize devices by rooms for easy management
+- **Quick Statistics**: View device summaries at a glance
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
+- **Modern UI/UX**: Clean, intuitive interface with smooth animations
+- **Device Controls**: Turn devices on/off, adjust settings, and monitor usage
 
-## File Structure
+## 🛠️ Technology Stack
 
-- `index.html` - HTML entry point
-- `vite.config.ts` - Vite configuration file
-- `tailwind.config.js` - Tailwind CSS configuration file
-- `package.json` - NPM dependencies and scripts
-- `src/app.tsx` - Root component of the project
-- `src/main.tsx` - Project entry point
-- `src/index.css` - Existing CSS configuration
-- `src/pages/Index.tsx` - Home page logic
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui components
+- **Build Tool**: Vite
+- **State Management**: Zustand
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages
 
-## Components
+## 🚀 Quick Start
 
-- All shadcn/ui components are pre-downloaded and available at `@/components/ui`
+### Prerequisites
 
-## Styling
+- Node.js (v16 or higher)
+- npm or pnpm
 
-- Add global styles to `src/index.css` or create new CSS files as needed
-- Use Tailwind classes for styling components
+### Installation
 
-## Development
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/smart-home-dashboard.git
+   cd smart-home-dashboard
+   ```
 
-- Import components from `@/components/ui` in your React components
-- Customize the UI by modifying the Tailwind configuration
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
 
-## Note
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   pnpm dev
+   ```
 
-- The `@/` path alias points to the `src/` directory
-- In your typescript code, don't re-export types that you're already importing
+4. **Open your browser**
+   Navigate to `http://localhost:5176`
 
-# Commands
+## 📁 Project Structure
 
-**Install Dependencies**
-
-```shell
-pnpm i
+```
+smart-home-dashboard/
+├── src/
+│   ├── components/          # Reusable UI components
+│   │   ├── QuickStats.tsx   # Device statistics overview
+│   │   ├── RoomSelector.tsx # Room navigation
+│   │   └── DeviceCard.tsx   # Individual device display
+│   ├── hooks/              # Custom React hooks
+│   │   └── useDevices.ts    # Device state management
+│   ├── pages/              # Page components
+│   │   ├── Index.tsx        # Main dashboard
+│   │   └── NotFound.tsx     # 404 page
+│   ├── types/              # TypeScript type definitions
+│   │   └── devices.ts       # Device interfaces
+│   ├── lib/                # Utility functions
+│   └── main.tsx            # Application entry point
+├── public/                 # Static assets
+├── package.json
+├── vite.config.ts          # Vite configuration
+└── tailwind.config.ts      # Tailwind configuration
 ```
 
-**Add Dependencies**
+## 🎯 Available Scripts
 
-```shell
-pnpm add some_new_dependency
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-**Start Preview**
+## 🔧 Supported Device Types
 
-```shell
-pnpm run dev
-```
+- **Lights**: Smart bulbs, LED strips
+- **Thermostats**: Temperature control devices
+- **Security Cameras**: IP cameras, doorbell cameras
+- **Smart Locks**: Door locks, garage doors
+- **Sensors**: Motion, temperature, humidity sensors
 
-**To build**
+## 🌐 Deployment
 
-```shell
-pnpm run build
-```
+### GitHub Pages Deployment
+
+This project is configured for easy deployment to GitHub Pages.
+
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to GitHub Pages**
+   The project uses GitHub Actions for automatic deployment. Simply push to the `main` branch.
+
+### Manual Deployment
+
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy the `dist` folder** to your hosting provider
+
+## 🎨 Customization
+
+### Adding New Device Types
+
+1. Add the device type to `src/types/devices.ts`
+2. Create corresponding UI components in `src/components/`
+3. Update device handling logic in `src/hooks/useDevices.ts`
+
+### Styling
+
+- Global styles: `src/index.css`
+- Component styles: Use Tailwind CSS classes
+- Theme customization: `tailwind.config.ts`
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful component library
+- [Lucide React](https://lucide.dev/) for the icon library
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+
+---
+
+**Live Demo**: [View Demo](https://yourusername.github.io/smart-home-dashboard)
+
+Made with ❤️ by [Your Name](https://github.com/yourusername)
